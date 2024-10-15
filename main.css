@@ -1,0 +1,75 @@
+/* ~ fonts ~ */
+@font-face {
+    font-family: Trueno;
+    src: url('fonts/trueno-font/Trueno-75PE.otf');
+}
+
+@font-face {
+    font-family: TruenoExtraBoldItalic;
+    src: url('fonts/trueno-font/TruenoExtraboldOutlineItalic-adaJ.otf');
+}
+
+@font-face {
+    font-family: TruenoLight;
+    src: url('fonts/trueno-font/TruenoLight-E2pg.otf');
+}
+
+@font-face {
+    font-family: ComicSans;
+    src: url('fonts/Comic Sans MS.ttf');
+}
+
+/* ~ colors/variables */
+:root {
+    --neutral: #7C7B7C;
+    --bright: #1A6EFF;
+    --dark: #343060;
+    --accent: #FF9E0D;
+  }
+
+/* ~ nav bar ~ */
+    nav{
+        background-color: var(--dark);
+        overflow: hidden;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    li {
+        float: left;
+        font-family: Trueno;
+    }
+
+    li a {
+        display: block;
+        padding: 14px 16px;
+        background-color: var(--dark);
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        transition: transform 0.15s;
+    }
+
+    li a:hover {
+        background-color: var(--dark);
+        color: var(--bright);
+        transform: scale(1.1);
+    }
+
+    .active {
+        background-color: var(--accent);
+    }
+
+    body {
+        margin:0;
+        background-image: url('images/SBpagebg.png');
+    }
+
+    h1{
+        font-family: ComicSans;
+    }
