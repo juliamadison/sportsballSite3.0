@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: TruenoExtraBoldItalic;
-    src: url('fonts/trueno-font/TruenoExtraboldOutlineItalic-adaJ.otf');
+    font-family: Masque;
+    src: url('fonts/MASQUE__.ttf');
 }
 
 @font-face {
@@ -23,14 +23,18 @@
 :root {
     --neutral: #7C7B7C;
     --bright: #1A6EFF;
-    --dark: #343060;
+    --dark: #32497A;
     --accent: #FF9E0D;
+
+    --darkText: #0D1A34;
+    --lightText: #f5f3ed;
   }
 
 /* ~ nav bar ~ */
     nav{
         background-color: var(--dark);
         overflow: hidden;
+        padding: 0%;
     }
 
     ul {
@@ -40,36 +44,79 @@
     }
 
     li {
-        float: left;
+        float: right;
         font-family: Trueno;
+        vertical-align: middle;
     }
 
     li a {
         display: block;
-        padding: 14px 16px;
+        padding: 20px 20px;
         background-color: var(--dark);
-        text-align: center;
+        text-align:center;
         text-decoration: none;
         color: white;
         display: inline-block;
         transition: transform 0.15s;
+        font-size: 120%;
+        
     }
 
     li a:hover {
-        background-color: var(--dark);
-        color: var(--bright);
+        color: var(--accent);
         transform: scale(1.1);
     }
 
     .active {
-        background-color: var(--accent);
+
     }
+
+/* ~ main ~ */
 
     body {
         margin:0;
         background-image: url('images/SBpagebg.png');
     }
 
-    h1{
-        font-family: ComicSans;
+    .main {
+        padding: 3%;
     }
+
+    .topHead {
+        position: relative;
+        padding: 0%;
+        align-items: center;
+        text-align: center;
+        height: 50%px;
+        width: 100%;
+        display: flex; 
+        justify-content: center; 
+        margin-top: 0%;
+        padding-top: 0px;
+    }
+    
+    .topheadText {
+        position: absolute; 
+        z-index: 1; 
+        width: 70%;
+        height: 50%px;
+        text-align: center;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+    }
+    
+
+    h1 {
+        font-family: Masque;
+        color: var(--darkText);
+        font-size: 60px;
+        background: linear-gradient(#ffcc00, #ff701b);
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(3px 5px 0px #000000);
+        position: absolute;    
+        overflow: hidden;
+    }
+
